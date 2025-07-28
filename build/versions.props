@@ -31,6 +31,7 @@
     <HealthCheckGremlin>9.0.0</HealthCheckGremlin>
     <HealthCheckHangfire>9.0.0</HealthCheckHangfire>
     <HealthCheckIbmMQ>9.0.0</HealthCheckIbmMQ>
+    <HealthCheckIbmDb2>9.0.0</HealthCheckIbmDb2>
     <HealthCheckInfluxDB>9.0.0</HealthCheckInfluxDB>
     <HealthCheckIoTHub>9.0.0</HealthCheckIoTHub>
     <HealthCheckKafka>9.0.0</HealthCheckKafka>
@@ -77,6 +78,7 @@
 
   <PropertyGroup>
     <TestcontainersVersion>4.1.0</TestcontainersVersion>
+    <TestcontainersDb2Version>4.6.0</TestcontainersDb2Version>
   </PropertyGroup>
   
 </Project>

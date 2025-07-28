@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>$(DefaultNetCoreApp)</TargetFrameworks>
+    <PackageTags>$(PackageTags);Ibm Db2</PackageTags>
+    <Description>HealthChecks.IbmDb2 is the health check package for Ibm Db2.</Description>
+    <VersionPrefix>$(HealthCheckIbmDb2)</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Net.IBM.Data.Db2" Condition="$([MSBuild]::IsOsPlatform('Windows'))" />
+    <PackageReference Include="Net.IBM.Data.Db2-lnx" Condition="$([MSBuild]::IsOsPlatform('Linux'))" />
+    <PackageReference Include="Net.IBM.Data.Db2-osx" Condition="$([MSBuild]::IsOsPlatform('OSX'))" />
+  </ItemGroup>
+
+</Project>

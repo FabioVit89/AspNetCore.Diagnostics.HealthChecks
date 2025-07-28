@@ -180,4 +180,14 @@ services:
           DOCKER_INFLUXDB_INIT_PASSWORD: password
           DOCKER_INFLUXDB_INIT_ORG: influxdata
           DOCKER_INFLUXDB_INIT_BUCKET: dummy
+    ibmdb2:
+        image: ibmcom/db2
+        ports:
+            - "50000:50000"
+        environment:
+            - LICENSE=accept
+            - DB2INST1_PASSWORD=Password12!
+            - DB2_ADMIN_PASSWORD=Password12!
+            - DB2_USER=db2inst1
+            - DB2_DATABASE=testdb
 
